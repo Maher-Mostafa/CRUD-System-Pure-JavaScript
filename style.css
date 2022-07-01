@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:black;
+    color:white;
+}
+.crud{
+    width:80%;
+    margin:auto;
+}
+
+.head{
+    text-align:center;
+    text-transform:uppercase;
+    margin:10px 0;
+}
+/* small{margin:45px;} */
+input{
+    width:100%;
+    height:30px;
+    outline:none;
+    border:none;
+    background:white;
+    margin:4px 0;
+    padding:10px;
+    border-radius:15px;
+    color:black;
+
+}
+.info{
+    display:flex;
+}
+
+input:focus{ 
+    transform:scale(1.1);
+    }
+
+#total{
+    padding : 4px 2px;
+    background:rgb(8, 104, 159);
+    border-radius:4px;
+}
+/* الكلمة ال هتتعرض قبل #total */
+
+#total::before{    
+    content:"Total:";
+}
+
+button{
+    width:100%;
+    height:30px;
+    border:none;
+    background-color:rgb(8, 104, 159);
+    border-radius:10px;
+    cursor:pointer;
+    transition:.5s;
+}
+
+button:hover{
+    letter-spacing:1.5px;
+}
+.btnSearch{
+    display:flex;
+    justify-content:space-between;
+}
+.btnSearch button{
+    width:35%;
+}
+
+/* #searchTitel{
+    margin-bottom:10px;
+} */
+
+table{
+    width:100%;
+    text-align:center;
+}
+table th{
+    text-transform:uppercase;
+}
+td,th{
+    padding:5px;
+}
